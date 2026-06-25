@@ -1,40 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CADASTRO DE VEÍCULO</title>
+    <title>Cadastro de Veículos</title>
+
+    <link rel="stylesheet" href="css/style_veiculos.css">
+    <script src="js/script_veiculos.js" type="module" defer ></script>
+
+
+
+
 </head>
 <body>
 
-    <div id="geral">
-        <h1>CADASTRO DE VEÍCULO</h1>
+    <h1>Cadastro de Veículos</h1>
 
-        <div id="div-form-veiculos">
-            <form id="form-veiculos">
-                <label for="marca">MARCA</label>
-                <input type="text" name="marca" id="marca">
-    
-                <label for="modelo">MODELO</label>
-                <input type="text" name="modelo" id="modelo">
-    
-                <label for="placa">PLACA</label>
-                <input type="text" name="placa" id="placa">
-    
-                <label for="ano de fabricacao">ANO DE FABRICAÇÃO</label>
-                <input type="text" name="ano de fabricacao" id="ano de fabricacao">
-    
-                <label for="valor do veiculo">VALOR DO VEÍCULO</label>
-                <input type="text" name="valor do veiculo" id="valor do veiculo">
-        </div>
-        </form>
+    <form id="formVeiculo">
 
-        <div id="div-lista-veiculos"></div>
+        <input type="text" id="marca" placeholder="Marca">
 
-    </div>
+        <input type="text" id="modelo" placeholder="Modelo">
 
+        <input type="text" id="placa" placeholder="Placa">
 
+        <input type="number" id="ano" placeholder="Ano de fabricação">
 
+        <input type="number" id="valor" placeholder="Valor do veículo">
+
+     
+            <legend>Combustível</legend> 
+
+            <label>
+                <input type="radio" name="combustivel" value="gasolina" >
+                Gasolina <br>
+            </label> 
+
+            <label>
+                <input type="radio" name="combustivel" value="etanol">
+                Etanol <br>
+            </label>
+
+            <label>
+                <input type="radio" name="combustivel" value="biocombustivel"> 
+                biocombustivel <br>
+            </label>
+
+            <label>
+                <input type="radio" name="combustivel" value="hibrido">
+                hibrido <br>
+            </label>
+
+            <label>
+                <input type="radio" name="combustivel" value="eletrico"> 
+                eletrico <br>
+            </label>
+     
+
+        <button type="submit">Adicionar</button>
+
+    </form>
+
+    <hr>
+
+    <h2>Veículos Cadastrados</h2>
+
+    <div id="listaVeiculos"></div>
+    <script type="module" src="./js/script_veiculos.js"></script>
 
 </body>
-</html>
+</html>    

@@ -1,0 +1,54 @@
+#geral{
+    width: 500px;
+    min-height: 600px;
+    padding: 10px;
+    margin: 20px alto;
+    font-family: Verdana;
+
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(174, 135, 214);
+}
+
+#div-form-veiculos, #form-veiculos{
+    width: 100%;
+    padding: 5px;
+    margin: 20px 0px;
+    background-color: rgb(166, 121, 207);
+    color: aliceblue;
+}
+
+#div-form-veiculos{
+    padding: 15px;
+    font-size: 1.2em;
+
+}
+
+label, input{
+    display: block;
+    margin: 15px 0px;
+
+}
+
+input{
+    width: 460px;
+    height: 40px;
+
+}
+
+button{
+    width: 230px;
+    height: 40px;
+    color:rgb(166, 121, 207);
+}
+
+#div-lista-veiculos{
+    width: 100%;
+    min-height: 450px;
+    color: rgb(255, 255, 255);
+}
+
